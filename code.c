@@ -1,13 +1,6 @@
 #include<stdio.h>
 
 int main(){
-
-
-
-
-
-
-	printf("this is test2\n");
+	printf("我好困\n");
 	return 0;
-
 }
