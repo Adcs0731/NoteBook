@@ -31,3 +31,25 @@
 	LICENSE: 许可证
 
 		GPL 2.0 3.0、Apache 2.0、Mit  这些许可证给使用者最大使用权限和最少的限制
+
+# Git软件，分布式版本控制系统
+	仓库管理软件，使用git管理私人代码或企业代码
+[![2.png](https://i.postimg.cc/WzdFbTfN/2.png)](https://postimg.cc/K3yv0S2w)
+
+## 设备认证
+1. 如何让网站的账户与设备绑定，后续完成代码的管理、上传下载
+   * git init  *//创建本地仓库*
+   * git config --list *//查看git的配置文件*
+   * git config --global user.email "邮箱"
+   * git config --global user.name "用户名"
+   * ssh-keygen -t rsa -C "注册邮箱" *//创建本地文本*
+ 
+2. 为目标仓库起别名，定位目标仓库，后续上传
+   * git remote add origin "ssh地址"  *//为ssh仓库地址创建别名为origin*
+   * git remote remove origin  *//删除origin别名*
+
+# 本地设备与云端仓库的交互逻辑
+[![3.png](https://i.postimg.cc/kg2m1DRX/3.png)](https://postimg.cc/k2PzDJyk)
+	git add      //添加内容
+	git rm	     //删除本地文件并删除仓库数据
+	git restore  //回复被删除的文件（仓库存在）
